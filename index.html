@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú desplegable</title>
+    <style>
+        nav {
+            text-align: center;
+            background-color: #0284fd;
+            width: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            position: relative;
+            background-color: #0284fd;
+        }
+            
+        .menu li {
+            display: inline-block;
+            position: relative;
+            padding: 12px 8px;
+            background-color: #0284fd;
+            border-right: 1px solid #cccccc00;
+            margin: 0 5px;
+        }
+    
+        .menu li:hover {
+            background-color: #0284fd00;
+        }
+    
+        .menu li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    
+        .submenu {
+            display: none;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            padding-top: 0px;
+            padding-bottom: 2px;
+            z-index: 0.1;
+            max-height: calc(100vh - 50px);
+            overflow-y: auto;
+        }
+    
+        .submenu li {
+            display: inline-block;
+            margin: 0 0px;
+            width: auto;
+            height: 180px;
+            text-align: center;
+            border: 1px solid #ffffff;
+            border-radius: 1px;
+            padding: 1px;
+            background-color: #ffffff;
+        }
+
+        .submenu li img {
+            width: 200px;
+            height: 150px;
+            border-radius: 1px 1px 0 0;
+            object-fit: contain;
+        }
+
+        .submenu li .card-content {
+            margin-top: 1px;
+            padding-bottom: 1px;
+        }
+
+        .submenu li a {
+            color: #000000;
+            display: block;
+            font-size: 1.5vh;
+            font-weight: bold;
+            justify-content: center;
+            margin-top: 1px;
+            padding-bottom: 1px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">PROMOCIONES</a>
+            </li>
+            <li>
+                <a href="#">HOGAR</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/hogar/HOGAR-ELECTROMENORES.png" alt="Electrodomésticos">
+                        <a href="#">ELECTROMENORES</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-ELECTRODOMESTICOS.png" alt="Accesorios Hogar">
+                        <a href="#">ELECTRODOMÉSTICOS</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-MUEBLERIA.png" alt="Electrodomésticos">
+                        <a href="#">MUEBLERIA</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-FERRETERIA.png" alt="Accesorios Hogar">
+                        <a href="#">FERRETERIA</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-COLCHONES.png" alt="Electrodomésticos">
+                        <a href="#">COLCHONES</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-DECORACION.png" alt="Electrodomésticos">
+                        <a href="#">DECORACION</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-ACCESORIOS.png" alt="Accesorios Hogar">
+                        <a href="#">ACCESORIOS</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-EXTERIORES.png" alt="Electrodomésticos">
+                        <a href="#">EXTERIORES</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-MASCOTAS.png" alt="Accesorios Hogar">
+                        <a href="#">MASCOTAS</a>
+                    </li>
+                    <li>
+                        <img src="img/hogar/HOGAR-INSTRUMENTOS-MUSICALES.png" alt="Electrodomésticos">
+                        <a href="#">INSTRUMENTOS MUSICALES</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TECNOLOGIA</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/tecnologia/TECNOLOGIA-ACCESORIOS.png" alt="Electrodomésticos">
+                        <a href="#">ACCESORIOS</a>
+                    </li>
+                    <li>
+                        <img src="img/tecnologia/TECNOLOGIA-AUDIO.png" alt="Electrodomésticos">
+                        <a href="#">AUDIO</a>
+                    </li>
+                    <li>
+                        <img src="img/tecnologia/TECNOLOGIA-CELULARES.png" alt="Electrodomésticos">
+                        <a href="#">CELULARES</a>
+                    </li>
+                    <li>
+                        <img src="img/tecnologia/TECNOLOGIA-COMPUTADORAS.png" alt="Electrodomésticos">
+                        <a href="#">COMPUTADORAS</a>
+                    </li>
+                    <li>
+                        <img src="img/tecnologia/TECNOLOGIA-TABLETS.png" alt="Electrodomésticos">
+                        <a href="#">TABLETS</a>
+                    </li>
+                    <li>
+                        <img src="img/tecnologia/TECNOLOGIA-VIDEOJUEGOS.png" alt="Electrodomésticos">
+                        <a href="#">VIDEOJUEGOS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">BELLEZA</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/belleza/BELLEZA-ACCESORIOS.png" alt="Electrodomésticos">
+                        <a href="#">ACCESORIOS</a>
+                    </li>
+                    <li>
+                        <img src="img/belleza/BELLEZA-CUIDADO-CAPILAR.png" alt="Electrodomésticos">
+                        <a href="#">CUIDADO CAPILAR</a>
+                    </li>
+                    <li>
+                        <img src="img/belleza/BELLEZA-CUIDADO-CORPORAL.png" alt="Electrodomésticos">
+                        <a href="#">CUIDADO CORPORAL</a>
+                    </li>
+                    <li>
+                        <img src="img/belleza/BELLEZA-CUIDADO-FACIAL.png" alt="Electrodomésticos">
+                        <a href="#">CUIDADO FACIAL</a>
+                    </li>
+                    <li>
+                        <img src="img/belleza/BELLEZA-JOYAS.png" alt="Electrodomésticos">
+                        <a href="#">JOYAS</a>
+                    </li>
+                    <li>
+                        <img src="img/belleza/BELLEZA-MAQUILLAJE.png" alt="Electrodomésticos">
+                        <a href="#">MAQUILLAJE</a>
+                    </li>
+                    <li>
+                        <img src="img/belleza/BELLEZA-PERFUMERIA.png" alt="Electrodomésticos">
+                        <a href="#">PERFUMERIA</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">BIENESTAR</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/bienestar/BIENESTAR-DEPORTES.png" alt="Electrodomésticos">
+                        <a href="#">DEPORTES</a>
+                    </li>
+                    <li>
+                        <img src="img/bienestar/BIENESTAR-EQUIPOS.png" alt="Electrodomésticos">
+                        <a href="#">EQUIPOS</a>
+                    </li>
+                    <li>
+                        <img src="img/bienestar/BIENESTAR-IMPLEMENTOS.png" alt="Electrodomésticos">
+                        <a href="#">IMPLEMENTOS</a>
+                    </li>
+                    <li>
+                        <img src="img/bienestar/BIENESTAR-NUTRICION.png" alt="Electrodomésticos">
+                        <a href="#">NUTRICION</a>
+                    </li>
+                    <li>
+                        <img src="img/bienestar/BIENESTAR-SALUD.png" alt="Electrodomésticos">
+                        <a href="#">SALUD</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">INFNTIL</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/infantil/INFANTIL-BEBES.png" alt="Electrodomésticos">
+                        <a href="#">BEBES</a>
+                    </li>
+                    <li>
+                        <img src="img/infantil/INFANTIL-ENTRETENIMIENTO.png" alt="Electrodomésticos">
+                        <a href="#">ENTRETENIMIENTO</a>
+                    </li>
+                    <li>
+                        <img src="img/infantil/INFANTIL-ESTIMULACION-TEMPRANA.png" alt="Electrodomésticos">
+                        <a href="#">ESTIMULACION TEMPRANA</a>
+                    </li>
+                    <li>
+                        <img src="img/infantil/INFANTIL-EXTERIORES.png" alt="Electrodomésticos">
+                        <a href="#">EXTERIORES</a>
+                    </li>
+                    <li>
+                        <img src="img/infantil/INFANTIL-MODA.png" alt="Electrodomésticos">
+                        <a href="#">MODA</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">AUTOMOTRIZ</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/automotriz/AUTOMOTRIZ-ACCESORIOS.png" alt="Electrodomésticos">
+                        <a href="#">ACCESORIOS</a>
+                    </li>
+                    <li>
+                        <img src="img/automotriz/AUTOMOTRIZ-LAMINAS-DE-SEGURIDAD.png" alt="Electrodomésticos">
+                        <a href="#">LAMINAS SEGURIDAD</a>
+                    </li>
+                    <li>
+                        <img src="img/automotriz/AUTOMOTRIZ-LLANTAS.png" alt="Electrodomésticos">
+                        <a href="#">LLANTAS</a>
+                    </li>
+                    <li>
+                        <img src="img/automotriz/AUTOMOTRIZ-MANTENIMIENTOS.png" alt="Electrodomésticos">
+                        <a href="#">MANTENIMIENTOS</a>
+                    </li>
+                    <li>
+                        <img src="img/automotriz/AUTOMOTRIZ-MOTOS.png" alt="Electrodomésticos">
+                        <a href="#">MOTOS</a>
+                    </li>
+                    <li>
+                        <img src="img/automotriz/AUTOMOTROZ-BATERIAS.png" alt="Electrodomésticos">
+                        <a href="#">BATERIAS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">LICORES</a>
+                <ul class="submenu">
+                    <li>
+                        <img src="img/licores/LICORES-ESPUMANTES.png" alt="Electrodomésticos">
+                        <a href="#">ESPUMANTES</a>
+                    </li>
+                    <li>
+                        <img src="img/licores/LICORES-OTROS.png" alt="Electrodomésticos">
+                        <a href="#">OTROS</a>
+                    </li>
+                    <li>
+                        <img src="img/licores/LICORES-VINOS.png" alt="Electrodomésticos">
+                        <a href="#">VINOS</a>
+                    </li>
+                    <li>
+                        <img src="img/licores/LICORES-WHISKY.png" alt="Electrodomésticos">
+                        <a href="#">WHISKY</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        const menuItems = document.querySelectorAll('.menu li');
+    
+        menuItems.forEach(item => {
+            const submenu = item.querySelector('.submenu');
+            if (submenu) {
+                submenu.addEventListener('mouseleave', () => {
+                    submenu.style.display = 'none';
+                });
+            }
+    
+            item.addEventListener('mouseenter', () => {
+                if (submenu) {
+                    submenu.style.display = 'block';
+                }
+            });
+    
+            item.addEventListener('mouseleave', () => {
+                if (submenu) {
+                    submenu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+
+</body>
+
+</html>
